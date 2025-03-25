@@ -1,0 +1,96 @@
+/* Main Container Styling */
+
+.main-container {
+    background-color: rgb(216, 178, 242);
+    justify-items: center;
+    height: 750px;
+    padding-top: 100px;
+    padding-left: 500px;
+    /* background-image: url(./registerImage.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background:transparent; */
+}
+
+.details-container {
+    background-color: white;
+    /* background-color: rgb(216, 178, 242); */
+    border-color: aliceblue;
+    color: black;
+    width: 50%;
+    height: 60%;
+    padding: 50px;
+    border-radius: 15px;
+    justify-items: flex-start;
+}
+
+.details-inputs input {
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    border-bottom: 5px rgb(240, 86, 207) solid;
+}
+
+.details-inputs label {
+    font-size: large;
+}
+
+.register-btn {
+    background-color: rgb(216, 178, 242);
+    /* background-color: white; */
+    border: none;
+    width: 120px;
+    height: 40px;
+    margin-left: 160px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-bottom: 5px rgb(240, 86, 207) solid;
+}
+
+.row-detail-container {
+    display: flex;
+}
+
+.each-detail-container {
+    padding-bottom: 20px;
+    padding-right: 30px;
+}
+
+/* Radio Buttons Styling */
+.gender-radio-container {
+    margin: 20px 0;
+}
+
+.radio-set-container {
+    display: flex;
+    gap: 20px;
+}
+
+.gender-radio-btn-container label {
+    display: inline-block;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.gender-radio-btn-container input[type="radio"] {
+    display: none;
+}
+
+.gender-radio-btn-container label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border: 2px solid #6200ea;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.gender-radio-btn-container input[type="radio"]:checked + label::before {
+    background-color: #6200ea;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
