@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Validation Form</title>
+</head>
+<body>
+    
+    <script src="script.js"></script>
+
+    <div id="main-container" class="main-container">
+        <div id="details-container" class="details-container">
+            <h1>Registration</h1><br>
+            <div class="details-inputs">
+                <form>
+                    <div class="row-detail-container">
+                        <div class="each-detail-container">
+                            <b><label>Full Name</label></b>
+                            <br>
+                            <input type="text" placeholder="fullname" value="">
+                        </div>
+
+                        <div class="each-detail-container">
+                            <b><label>Username</label></b>
+                            <br>
+                            <input type="text" placeholder="username" value="">
+                        </div>
+                    </div>
+                    
+                    <div class="row-detail-container">
+                        <div class="each-detail-container">
+                            <b><label>Mail ID</label></b>
+                            <br>
+                            <input type="text" placeholder="mailID" value="">
+                        </div>
+                        <div class="each-detail-container">
+                            <b><label>Phone No</label></b>
+                            <br>
+                            <input type="text" placeholder="phoneno" value="">
+                        </div>
+                    </div>
+
+                    <div class="row-detail-container">
+                        <div class="each-detail-container">
+                            <b><label>Password</label></b>
+                            <br>
+                            <input type="password" placeholder="password" value="">
+                        </div>
+                        <div class="each-detail-container">
+                            <b><label>Confirm Password</label></b>
+                            <br>
+                            <input type="password" placeholder="cpassword" value="">
+                        </div>
+                    </div>
+
+                    <div class="gender-radio-container">
+                        <legend>Gender</legend>
+                        <div class="radio-set-container">
+                            <div class="gender-radio-btn-container">
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                            <div class="gender-radio-btn-container">
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="gender-radio-btn-container">
+                                <input type="radio" id="prefer-not-to-say" name="gender" value="prefer-not-to-say" checked>
+                                <label for="prefer-not-to-say">Prefer Not To Say</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" id="register-btn" class="register-btn" name="Register">Register</button>
+                    <br>
+                    <h3>Already have an account?<a href="loginForm.html">Login here!</a></h3>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
